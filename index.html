@@ -21,7 +21,7 @@
     <div class="form-group">
       <label for="API_URL">API_URL</label>
       <input type="text" class="form-control" id="API_URL" placeholder="Api URL">
-      <small class="form-text text-muted">Sin comillas</small>
+      <small class="form-text text-muted">(Sin la barra al final)</small>
     </div>
     <div class="form-group">
       <label for="LOGIN_URL">LOGIN_URL</label>
@@ -91,7 +91,11 @@
 
       resultado.html( `${linea1} ${linea2} ${linea3} ${linea4}` );
 
-
+      /*
+      API_URL='"http://ec2-34-242-23-114.eu-west-1.compute.amazonaws.com:8085/v1"'
+      LOGIN_URL='"http://ec2-34-242-23-114.eu-west-1.compute.amazonaws.com:4200/?callback=http:%2F%2Flocalhost:8081%23%2F%0Atoken"'
+      PORT=8081 npm run dev
+      */
     } );
   } );
 </script>
